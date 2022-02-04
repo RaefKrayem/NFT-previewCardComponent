@@ -14,6 +14,7 @@ body {
 span {
     color: white;
     font-weight: 600;
+    transition: 0.4s;
 }
 
 h3 {
@@ -26,6 +27,7 @@ h2 {
     color: hsl(0, 0%, 100%);
     font-size: 30px;
     font-weight: 700;
+    transition: 0.4s;
 }
 
 
@@ -51,11 +53,7 @@ p {
     width: 370px;
 }
 
-.pic {
-    border-radius: 20px;
-    width: 100%;
-    height: 350px;
-}
+
 
 .txt {
    width: 100%;
@@ -110,4 +108,48 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+}
+
+
+
+.pictures {
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+span:hover, h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+.equilibrium {
+    border-radius: 20px;
+    width: 100%;
+    height: 350px;
+    z-index: 3;
+    
+}
+
+.view {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.equilibrium:hover {
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.pictures:hover {
+    background-color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
